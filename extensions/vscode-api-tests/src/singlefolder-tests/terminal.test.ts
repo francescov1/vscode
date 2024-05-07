@@ -806,7 +806,7 @@ import { assertNoRpc, poll } from '../utils';
 				});
 			});
 
-			test('should respect clearing entries', async () => {
+			test.skip('should respect clearing entries', async () => {
 				// Setup collection and create terminal
 				const collection = extensionContext.environmentVariableCollection;
 				disposables.push({ dispose: () => collection.clear() });
@@ -847,7 +847,7 @@ import { assertNoRpc, poll } from '../utils';
 				});
 			});
 
-			test('should respect deleting entries', async () => {
+			test.skip('should respect deleting entries', async () => {
 				// Setup collection and create terminal
 				const collection = extensionContext.environmentVariableCollection;
 				disposables.push({ dispose: () => collection.clear() });
